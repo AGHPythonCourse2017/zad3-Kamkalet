@@ -3,10 +3,14 @@ import tweepy
 
 class TwitterAPIService:
     def __init__(self, search_phrase):
-        self.consumer_key = 'oneQRaDMOvE1Qq3AGVcXQV71d'
-        self.consumer_secret = 'WF5LjoBZCwF7NJF7H6fxHwy6cy1Z6wBGKhbEMSrZEWxAvw0B2L'
-        self.access_token = '870650907528237058-Z9LYo2hAdTuIzAWU1DBjU7jET1LSuTn'
-        self.access_token_secret = 'qHEuwWNzvMQKVtYKUckw1mfDZxD6nJwM7dFlwGs96CNst'
+        self.consumer_key =\
+            'oneQRaDMOvE1Qq3AGVcXQV71d'
+        self.consumer_secret =\
+            'WF5LjoBZCwF7NJF7H6fxHwy6cy1Z6wBGKhbEMSrZEWxAvw0B2L'
+        self.access_token =\
+            '870650907528237058-Z9LYo2hAdTuIzAWU1DBjU7jET1LSuTn'
+        self.access_token_secret =\
+            'qHEuwWNzvMQKVtYKUckw1mfDZxD6nJwM7dFlwGs96CNst'
 
         self.search_phrase = search_phrase
         self.tweet_list = []
@@ -23,9 +27,8 @@ class TwitterAPIService:
         self.api = tweepy.API(auth)
 
     def search_tweets_and_save(self):
-        # search_results = self.api.search(q=self.search_phrase, count=100, tweet_mode="extended")
         max_tweets = 1000
-        print(self.search_phrase)
+        # print(self.search_phrase)
         search_results = tweepy.Cursor(self.api.search,
                                        q=self.search_phrase,
                                        since="2017-01-01",).items(max_tweets)
@@ -42,5 +45,5 @@ class Tweet:
         self.tweet = result
 
     def get_text_of_tweet(self):
-        print(self.tweet)
+        # print(self.tweet)
         return self.tweet.text

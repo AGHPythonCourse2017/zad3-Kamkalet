@@ -7,8 +7,9 @@ class StringArgumentParser:
         self.parse_arguments()
 
     def parse_arguments(self):
-        parser = argparse.ArgumentParser(description="Find if your input text is fake!!",
-                                       formatter_class=argparse.RawTextHelpFormatter)
+        parser = argparse.ArgumentParser(
+            description="Find if your input text is fake!!",
+            formatter_class=argparse.RawTextHelpFormatter)
         parser.add_argument("news",
                             help="Url in a string format",  nargs='+')
 

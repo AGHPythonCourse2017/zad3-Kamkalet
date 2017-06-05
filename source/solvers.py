@@ -12,7 +12,8 @@ class Solver:
             # print(tweet)
             tweets_in_one_string += tweet
 
-        self.news_count = tweets_in_one_string.upper().count(self.tested_news.upper())
+        self.news_count = \
+            tweets_in_one_string.upper().count(self.tested_news.upper())
         # print(news_count)
         if self.news_count < 3:
             print("This is fake :(, presumably..")
