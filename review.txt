@@ -1,1 +1,3 @@
 https://github.com/AGHPythonCourse2017/zad2-dykra/pull/1#pullrequestreview-42151283
+
+https://github.com/AGHPythonCourse2017/zad2-bkij/pull/1

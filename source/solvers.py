@@ -15,7 +15,7 @@ class Solver:
         self.news_count = \
             tweets_in_one_string.upper().count(self.tested_news.upper())
         # print(news_count)
-        if self.news_count < 3:
+        if self.news_count < 5:
             print("This is fake :(, presumably..")
         else:
             print("This is presumably true")

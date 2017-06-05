@@ -2,8 +2,8 @@ from parsers import StringArgumentParser
 from solvers import Solver
 from tweeterservice import TwitterAPIService
 
-from source.articleservice import ArticleAPIService
-from source.articleservice import TextProcessor
+from articleservice import ArticleAPIService
+from articleservice import TextProcessor
 
 
 def main():
