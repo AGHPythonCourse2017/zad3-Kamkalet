@@ -1,8 +1,9 @@
 from parsers import StringArgumentParser
-from tweeterservice import TwitterAPIService
 from solvers import Solver
-from articleservice import ArticleAPIService
-from articleservice import TextProcessor
+from tweeterservice import TwitterAPIService
+
+from source.articleservice import ArticleAPIService
+from source.articleservice import TextProcessor
 
 
 def main():
